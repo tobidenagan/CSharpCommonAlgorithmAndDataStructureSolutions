@@ -35,8 +35,8 @@ namespace Practice
         {
             var nMax = n.Max();
             var nMin = n.Min();
-
-            Console.WriteLine(n.Where(x => x != nMax).Sum() + " " + n.Where(x => x != nMin).Sum());
+            var Sum = n.Sum();
+            Console.WriteLine((Sum - nMax) + " " + (Sum - nMin));
         }
 
         static void MaxCount(List<int> n)
